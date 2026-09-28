@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Keerthy G — Cybersecurity Portfolio</title>
+<style>
+:root{--bg:#F4F7FA;--ink:#0B1B2B;--mute:#4A5B6C;--line:#C9D3DD;--blue:#003B73;--hot:#E8480C;--card:#fff;--term:#0B1B2B;--termtx:#DCE8F2;
+ box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0A141E;--ink:#EAF1F7;--mute:#98A9BA;--line:#22344A;--blue:#7DB4F0;--hot:#FF7A3D;--card:#101F2E;--term:#050C13;--termtx:#DCE8F2}}
+:root[data-theme="dark"]{--bg:#0A141E;--ink:#EAF1F7;--mute:#98A9BA;--line:#22344A;--blue:#7DB4F0;--hot:#FF7A3D;--card:#101F2E;--term:#050C13;--termtx:#DCE8F2}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--hot);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0;font-size:15px}
+nav .logo{font-family:Georgia,"Times New Roman",serif;font-weight:700;font-size:20px;text-decoration:none}
+nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0}
+nav a{text-decoration:none;color:var(--mute)}
+nav a:hover{color:var(--ink)}
+.hero{padding:56px 0 72px;display:grid;gap:40px;grid-template-columns:1.25fr 1fr;align-items:center}
+h1{font-family:Georgia,"Times New Roman",serif;font-weight:700;font-size:clamp(46px,8vw,92px);line-height:.98;letter-spacing:-.03em;margin:0 0 22px}
+h1 em{font-style:italic;color:var(--hot)}
+.lede{font-size:19px;color:var(--mute);max-width:32em;margin:0 0 28px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 22px;border-radius:999px;text-decoration:none;font-weight:600;font-size:15px;border:1.5px solid var(--ink)}
+.btn.p{background:var(--ink);color:var(--bg)}
+.term{background:var(--term);color:var(--termtx);border-radius:14px;font:14px/1.7 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;padding:20px 22px;overflow-x:auto;border:1px solid var(--line)}
+.term .d{display:inline-block;width:10px;height:10px;border-radius:50%;background:#3a4b5d;margin-right:6px}
+.term .k{color:#7DB4F0}.term .o{color:#FF9A6B}.term .g{color:#8A9BAB}
+.term p{margin:0;white-space:pre}
+section{padding:64px 0;border-top:1px solid var(--line)}
+h2{font-family:Georgia,"Times New Roman",serif;font-size:clamp(30px,4.5vw,46px);letter-spacing:-.02em;line-height:1.05;margin:0 0 34px}
+.grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px}
+.card h3{margin:0 0 6px;font-size:21px}
+.card p{margin:8px 0 0;color:var(--mute);font-size:16px}
+.tag{display:inline-block;font:600 12px ui-monospace,Menlo,Consolas,monospace;padding:3px 10px;border-radius:999px;border:1px solid var(--hot);color:var(--hot);margin-bottom:12px}
+.tag.live{border-color:var(--blue);color:var(--blue)}
+.tl{list-style:none;margin:0;padding:0 0 0 22px;border-left:2px solid var(--blue)}
+.tl li{position:relative;padding:0 0 26px 8px}
+.tl li:before{content:"";position:absolute;left:-30px;top:8px;width:12px;height:12px;border-radius:50%;background:var(--bg);border:3px solid var(--blue)}
+.tl b{font-size:18px}
+.tl .m{display:block;color:var(--mute);font-size:14px;margin:2px 0 4px}
+.tl span.t{color:var(--mute);font-size:16px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;padding:0;margin:0 0 22px;list-style:none}
+.chips li{padding:8px 16px;border-radius:999px;background:var(--card);border:1px solid var(--line);font-size:15px}
+.chips.sec li{border-color:var(--blue);font-weight:600}
+h3.s{font-size:15px;color:var(--mute);margin:26px 0 12px;font-weight:600}
+.two{display:grid;gap:48px;grid-template-columns:1fr 1fr}
+.contact{font-family:Georgia,serif;font-size:clamp(26px,5vw,52px);line-height:1.1;letter-spacing:-.02em}
+.contact a{color:var(--hot)}
+footer{padding:36px 0 48px;color:var(--mute);font-size:14px;border-top:1px solid var(--line)}
+@media(max-width:820px){.hero,.two{grid-template-columns:1fr}nav ul{gap:14px}.hero{padding-top:28px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav aria-label="Primary"><a class="logo" href="#top">Keerthy G</a>
+<ul><li><a href="#projects">Projects</a></li><li><a href="#path">Path</a></li><li><a href="#skills">Skills</a></li><li><a href="#contact">Contact</a></li></ul></nav>
+
+<header class="hero" id="top">
+<div>
+<h1>I learn to break things so they can be <em>secured</em>.</h1>
+<p class="lede">Cybersecurity student at Cyberbee Academy, Thiruvananthapuram, focused on ethical hacking. I build my own security tools, write beginner-friendly learning material, and bring five years of customer-facing work to how I explain risk.</p>
+<div class="btns"><a class="btn p" href="#projects">See my projects</a><a class="btn" href="#contact">Get in touch</a></div>
+</div>
+<div class="term" role="img" aria-label="Terminal summary">
+<p><span class="d"></span><span class="d"></span><span class="d"></span></p>
+<p><span class="g">$</span> whoami</p>
+<p>keerthy-g</p>
+<p><span class="g">$</span> cat focus.txt</p>
+<p><span class="k">study</span>   cybersecurity</p>
+<p><span class="k">track</span>   ethical hacking</p>
+<p><span class="k">lab</span>     kali linux, hydra</p>
+<p><span class="k">build</span>   python security tools</p>
+<p><span class="g">$</span> status</p>
+<p><span class="o">learning, building, shipping</span></p>
+</div>
+</header>
+
+<section id="projects">
+<h2>Things I'm building</h2>
+<div class="grid">
+<article class="card"><span class="tag">In development</span><h3>VulnHawk</h3><p>My own Python vulnerability scanner. Its main feature is scheduled scanning with change detection: it compares scan history over time and flags new or changed ports and vulnerabilities.</p></article>
+<article class="card"><span class="tag">In development</span><h3>PhishTank</h3><p>A web app that checks emails for phishing using rule-based checks on sender domains and URL patterns. An AI layer comes after the rules work well.</p></article>
+<article class="card"><span class="tag live">Learning site</span><h3>Cybersecurity Basics</h3><p>A free GitHub Pages site covering networking, password security and phishing awareness, with PDF resources and a Python basics course with code you can build along with.</p></article>
+<article class="card"><span class="tag">Class project</span><h3>Cyber Learning Hub</h3><p>A study site for fellow students with topic pages for network analysis, log analysis and protocols, plus search and downloadable PDF notes for each topic.</p></article>
+</div>
+</section>
+
+<section id="path">
+<h2>Where I've been</h2>
+<div class="two">
+<div>
+<h3 class="s">Education</h3>
+<ol class="tl">
+<li><b>Cybersecurity</b><span class="m">Cyberbee Academy, Thiruvananthapuram · Present</span></li>
+<li><b>UPSC preparation</b><span class="m">MGOCSM Civil Service Academy, Palayam · 2023</span></li>
+<li><b>Diploma in Hospital Administration</b><span class="m">ISSD, Kalamassery, Kochi · 2021</span></li>
+<li><b>B.Com, Finance</b><span class="m">All Saints' College, Thiruvananthapuram · 2020</span></li>
+<li><b>Higher Secondary</b><span class="m">St. Mary's HSS, Vettucadu · 2018</span></li>
+<li><b>SSLC</b><span class="m">St. Roch's Convent School, Thope · 2015</span></li>
+</ol>
+</div>
+<div>
+<h3 class="s">Experience</h3>
+<ol class="tl">
+<li><b>Marketing Lead</b><span class="m">Neo Marketing Solutions, Thiruvananthapuram · 8 months</span><span class="t">Lead generation, client feedback, telecalling, content marketing, and assisting the marketing team.</span></li>
+<li><b>Student Councillor</b><span class="m">IEHRD Council · 6 months</span><span class="t">Course guidance and academic counselling.</span></li>
+<li><b>Front Office</b><span class="m">SK Hospital, Pangode · 1 year</span><span class="t">Patient assistance, appointment scheduling, registration, billing and payments.</span></li>
+<li><b>Marketing Trainee</b><span class="m">GPL, Kothamangalam, Ernakulam · 6 months</span><span class="t">Strategy, brand management, product sales and reporting.</span></li>
+<li><b>Tele Student Consultant</b><span class="m">My Study Line, Thiruvananthapuram · 1 year</span><span class="t">Student interaction, lead generation, counselling and data management.</span></li>
+</ol>
+</div>
+</div>
+</section>
+
+<section id="skills">
+<h2>What I bring</h2>
+<h3 class="s" style="margin-top:0">Security</h3>
+<ul class="chips sec"><li>Ethical hacking</li><li>Kali Linux</li><li>Hydra lab exercises</li><li>Port and service scanning</li><li>Phishing analysis</li><li>Python</li></ul>
+<h3 class="s">Professional</h3>
+<ul class="chips"><li>Communication</li><li>Multitasking</li><li>Customer-centric</li><li>Product knowledge</li><li>Marketing</li></ul>
+<h3 class="s">Languages</h3>
+<ul class="chips"><li>English</li><li>Malayalam</li><li>Tamil</li></ul>
+</section>
+
+<section id="contact">
+<h2>Let's talk</h2>
+<p class="contact">Hiring, mentoring or just curious? Write to <a href="mailto:keerthy74g@gmail.com">keerthy74g@gmail.com</a></p>
+<div class="btns" style="margin-top:28px"><a class="btn p" href="mailto:keerthy74g@gmail.com">Email me</a><a class="btn" href="https://github.com/squady96" target="_blank" rel="noopener">GitHub</a></div>
+</section>
+<footer>© Keerthy G · Thiruvananthapuram, India</footer>
+</div>
+</body>
+</html>
